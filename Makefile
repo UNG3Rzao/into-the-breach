@@ -10,19 +10,19 @@ unit.o : unit.cpp
   g++ -c unit.cpp
 
 terrain.o : terrain.cpp
-  g++ -c unit.cpp
+  g++ -c terrain.cpp
 
 field.o : field.cpp
-  g++ -c unit.cpp
+  g++ -c field.cpp
 
 actions.o : actions.cpp
-  g++ -c unit.cpp
+  g++ -c actions.cpp
 
 engine.o : engine.cpp
-  g++ -c unit.cpp
+  g++ -c engine.cpp
 
 algorithms.o : algorithms.cpp
   g++ -c algorithms.cpp
 
 main.o : main.cpp
-  g++ -c unit.cpp
+  g++ -c main.cpp
