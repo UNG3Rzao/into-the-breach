@@ -1,0 +1,25 @@
+.PHONY : clean all
+
+all : run.exe
+  echo "all done."
+
+run.exe : unit.o terrain.o field.o actions.o algorithms.o engine.o 
+  g++ unit.o terrain.o field.o actions.o algorithms.o engine.o -o run.exe
+
+unit.o : unit.cpp
+  g++ -c unit.cpp
+
+terrain.o : terrain.cpp
+  g++ -c unit.cpp
+
+field.o : field.cpp
+  g++ -c unit.cpp
+
+actions.o : actions.cpp
+  g++ -c unit.cpp
+
+engine.o : engine.cpp
+  g++ -c unit.cpp
+
+main.o : main.cpp
+  g++ -c unit.cpp
