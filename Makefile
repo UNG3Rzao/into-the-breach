@@ -21,5 +21,8 @@ actions.o : actions.cpp
 engine.o : engine.cpp
   g++ -c unit.cpp
 
+algorithms.o : algorithms.cpp
+  g++ -c algorithms.cpp
+
 main.o : main.cpp
   g++ -c unit.cpp
