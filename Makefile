@@ -3,8 +3,8 @@
 all : run.exe
   echo "all done."
 
-run.exe : unit.o terrain.o field.o actions.o algorithms.o engine.o 
-  g++ unit.o terrain.o field.o actions.o algorithms.o engine.o -o run.exe
+run.exe : unit.o terrain.o field.o actions.o algorithms.o engine.o main.o
+  g++ unit.o terrain.o field.o actions.o algorithms.o engine.o main.o -o run.exe
 
 unit.o : unit.cpp
   g++ -c unit.cpp
